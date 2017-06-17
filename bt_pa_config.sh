@@ -149,10 +149,7 @@ EOT
 mkdir /etc/pulsebackup
 cp /etc/pulse/* /etc/pulsebackup/
 git clone --branch v6.0 https://github.com/pulseaudio/pulseaudio
-apt-get install -y intltool
-apt-get install -y libsndfile-dev
-apt-get install -y libcap-dev
-apt-get install -y libjson0-dev
+apt-get install -y intltool libsndfile-dev libcap-dev libjson0-dev libjson-c-dev
 cd pulseaudio
 ./bootstrap.sh
 make
